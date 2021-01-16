@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="failure_xml_file.ExecuteOnlyFailureTestcase">
+      <class name="POM_DDF_Testng_BaseClass_Utility.KiteTest">
         <methods>
-          <include name="TC3"/>
+          <include name="closebrowser"/>
+          <include name="loginApp"/>
+          <include name="verifyProfileName"/>
+          <include name="logoutApp"/>
+          <include name="openbrowser"/>
         </methods>
-      </class> <!-- failure_xml_file.ExecuteOnlyFailureTestcase -->
+      </class> <!-- POM_DDF_Testng_BaseClass_Utility.KiteTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

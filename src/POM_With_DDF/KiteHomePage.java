@@ -14,10 +14,18 @@ public class KiteHomePage
 		PageFactory.initElements(d, this);
 	}
 
-	public String getKiteHomePageProfileName()
+	public void verifyKiteHomePageProfileName()
 	{
-		String act = proname.getText();
-		return act;
+		boolean result = proname.isDisplayed();
+		if(result)
+			System.out.println("Pass");
+		else
+			System.out.println("Fail");
 		
+	}
+
+	public String getKiteHomePageProfileName() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
